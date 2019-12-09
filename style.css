@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    
+    /* CSS Smooth Scroll */
+    /* overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 4rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover{
+    color: skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+section h1 {
+    font-size: 49px;
+}
+
+section p {
+    font-size: 17px;
+    background: #ffffff78;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Section Images */
+
+section#home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    background: url('/img/solar1.jpeg') no-repeat center center/cover;
+}
+
+.home {
+    margin: 2rem;
+}
+
+section#reports {
+    background: url('/img/solar2.jpeg') no-repeat center center/cover;
+}
+
+section#contacts {
+    background: url('/img/solar3.jpeg') no-repeat center center/cover;
+}
+
